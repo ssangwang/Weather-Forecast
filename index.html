@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,31 @@
     <link rel="stylesheet" href="assets\css\style.css" />
     <title>Weather Forecast App</title>
 </head>
+
 <body>
+    <div class="title">Weather Dashboard</div>
+        <!-- Search for a city -->
+        <div class="search">
+            <h2> Search for a City: </h2>
+            <input type="text" id="srchBx" name="srchBox" class="searchBox"></input>
+            <button class="searchBtn"> Search </button>
+        </div>
+        <!-- Recent Searches -->
+        <div>
+            <li>filler</li>
+            <li>filler</li>
+            <li>filler</li>
+            <li>filler</li>
+            <li>filler</li>
+            <li>filler</li>
+            <li>filler</li>
+            <li>filler</li>
+        </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid=783819609a1154fecc0d013aa520cde6"></script>
+    <script
+        src="api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid=783819609a1154fecc0d013aa520cde6"></script>
     <script type="text/javascript" src="assets\js\script.js"></script>
 </body>
+
 </html>
