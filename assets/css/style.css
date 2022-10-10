@@ -36,8 +36,11 @@
     background-color: rgb(83, 182, 231);
 }
 
-ul li {
+li {
     list-style-type: none;
+}
+
+ul li {
     padding: 5px;
     margin: 10px;
     background-color: gray;
@@ -48,7 +51,6 @@ ul li {
 } 
 
 div li {
-    list-style: none;
     margin: 10px;
 }
 
@@ -63,6 +65,3 @@ div li {
     width: 70%;
 }
 
-.day1 {
-    
-}
