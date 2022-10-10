@@ -1,4 +1,4 @@
-var apiKey = "https://api.openweathermap.org/data/2.5/weather?q=sacramento&appid=783819609a1154fecc0d013aa520cde6"
+var apiKey = "https://api.openweathermap.org/data/2.5/forecast?q=sacramento&cnt=5&appid=783819609a1154fecc0d013aa520cde6"
 //check to see if url works
 function getapi() {
     fetch(apiKey)
@@ -15,16 +15,17 @@ getapi();
 function getCity(){
     var cityInput = document.getElementById('srchBx');
     localStorage.setItem("City", cityInput.value);
-    var srchCity = "https://api.openweathermap.org/data/2.5/weather?q=" + cityInput.value + "&appid=783819609a1154fecc0d013aa520cde6&units=imperial";
+    var srchCity = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityInput.value + "&cnt=5&appid=783819609a1154fecc0d013aa520cde6&units=imperial";
     fetch(srchCity)
     .then(function (response) {
         return response.json();
     })
     .then(function (data) {
         console.log(data);
-        document.getElementById('crntTemp').textContent = "Temperature: " + data.main.temp + "℉";
-        document.getElementById('crntWind').textContent = "Wind: " + data.wind.speed + "mph";
-        document.getElementById('crntHumid').textContent ="Humidity: " + data.main.humidity + "%";
+        // set current city 
+        document.getElementById('crntTemp').textContent = "Temperature: " + data.list[0].main.temp + "℉";
+        document.getElementById('crntWind').textContent = "Wind: " + data.list[0].wind.speed + "mph";
+        document.getElementById('crntHumid').textContent ="Humidity: " + data.list[0].main.humidity + "%";
     });
 
     // input data into boxes 
