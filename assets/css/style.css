@@ -65,3 +65,21 @@ div li {
     width: 70%;
 }
 
+h3 {
+    border: 1px solid black;
+    width: 200px;
+    height: 160px;
+    margin: 10px;
+}
+
+.forecast {
+    display: flex;
+    position: absolute;
+    left: 345px;
+    bottom: 190px;
+
+}
+
+h3 li {
+    margin: 12px;
+}

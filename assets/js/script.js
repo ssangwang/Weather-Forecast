@@ -1,4 +1,3 @@
-
 //set search into local storage. 
 function getCity(){
     var cityInput = document.getElementById('srchBx');
@@ -21,13 +20,13 @@ function getCity(){
             var forecastHumid = document.createElement('li');
             var forecastDate = document.createElement('h3')
             var forecastBox = document.getElementById('5day');
-            forecastDate.textContent = "Date";
+            forecastDate.textContent = moment().add(i, 'days').calendar();
             forecastTemp.textContent = "Temperature: " + data.list[i].main.temp + "℉";
             forecastWind.textContent = "Wind: " + data.list[i].wind.speed + "mph";
             forecastHumid.textContent ="Humidity: " + data.list[i].main.humidity + "%";
             forecastBox.append(forecastDate);
-            forecastDate.append(forecastHumid);
             forecastDate.append(forecastTemp);
+            forecastDate.append(forecastHumid);
             forecastDate.append(forecastWind);
         }
 
