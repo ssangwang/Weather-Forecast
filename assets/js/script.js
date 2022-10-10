@@ -24,7 +24,7 @@ function getCity(){
         console.log(data);
     });
     // input data into boxes 
-    document.getElementById('crntCity').textContent(cityInput.value);
+    document.getElementById('currentCity').textContent = (cityInput.value);
 }
 
 var srchBtn = document.getElementById('srchBtn');
