@@ -52,6 +52,7 @@ ul li {
 
 div li {
     margin: 10px;
+    font-weight: bold;
 }
 
 .crntCity {
