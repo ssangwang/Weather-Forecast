@@ -1,5 +1,5 @@
-//set search into local storage. 
 function getCity(){
+    //set search into local storage. 
     var cityInput = document.getElementById('srchBx');
     localStorage.setItem("City", JSON.stringify(cityInput.value));
     var srchCity = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityInput.value + "&cnt=6&appid=783819609a1154fecc0d013aa520cde6&units=imperial";

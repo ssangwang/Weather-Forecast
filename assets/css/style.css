@@ -1,3 +1,7 @@
+body {
+   font-family: "Lato Extended","Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .title {
     display: block;
     font-size: 45px;
@@ -69,18 +73,20 @@ div li {
 h3 {
     border: 1px solid black;
     width: 200px;
-    height: 160px;
+    height: 190px;
     margin: 10px;
+    background-color: #374590;
 }
 
 .forecast {
     display: flex;
     position: absolute;
     left: 345px;
-    bottom: 190px;
+    bottom: 160px;
 
 }
 
 h3 li {
     margin: 12px;
+    color: white;
 }
